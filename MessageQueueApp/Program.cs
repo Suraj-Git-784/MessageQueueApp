@@ -8,12 +8,16 @@ var stats = new MessageStats();
 var producer = new Producer(queue);
 var consumer = new Consumer(queue, stats, logger);
 
-// Simulate producing
-producer.Produce("Message 1");
-producer.Produce("Message that should fail");
+var messages = new List<string>
+        {
+            "Hello World",
+            "fail this message",
+            "Message 3",
+            "Another fail"
+        };
 
-// Simulate consuming
+producer.Produce(messages);
+
 consumer.Consume();
 
-// Output stats
 stats.PrintStats();

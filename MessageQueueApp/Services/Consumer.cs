@@ -25,7 +25,7 @@ namespace MessageQueueApp.Services
                     if (message.Content.Contains("fail"))
                         throw new Exception("Simulated error");
 
-                    _logger.LogInfo($"Processed: {message.Content}");
+                    _logger.LogInfo($"Id: {message.Id}, Processed: {message.Content}");
                     _stats.IncrementSuccess();
                 }
                 catch (Exception ex)
