@@ -37,3 +37,17 @@ dotnet run
 
 ## 🧪 Run Unit Tests
 dotnet test
+
+## 🚀 Features
+
+Feature	Description
+📨 Producer	Generates messages (some meant to fail)
+📥 Queue	Stores messages to be processed
+⚙️ Consumer	Processes each message
+📊 Stats	Tracks success and failure counts
+📓 LoggingService	Logs message status (success/error)
+🧪 Unit Testing	Validates correct handling of all scenarios
+
+## 👤 Author
+Suraj Kumar
+.NET Developer – Assignment Submission
