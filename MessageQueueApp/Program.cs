@@ -13,7 +13,7 @@ var messages = new List<string>
             "Hello World",
             "fail this message",
             "Message 3",
-            "Another fail"
+            "Another fail message"
         };
 
 producer.Produce(messages);
